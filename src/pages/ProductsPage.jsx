@@ -1,6 +1,6 @@
-import { BarChart2, ShoppingBag, User, Zap } from "lucide-react";
+import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import Header from "../components/common/Header";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import ProductTable from "../components/product/ProductTable";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
@@ -19,38 +19,38 @@ const ProductsPage = () => {
           transition={{ duration: 1 }}
         >
           <StatCard
-            name={"Total Sales"}
-            icon={Zap}
-            value="12,000"
-            color="#6366f1"
+            name="Total de produtos"
+            icon={Package}
+            value={1234}
+            color="#6366F1"
           />
           <StatCard
-            name={"New Users"}
-            icon={User}
-            value="1234"
-            color="#8b5cf6"
+            name="Mais Vendido"
+            icon={TrendingUp}
+            value={89}
+            color="#10B981"
           />
           <StatCard
-            name={"Total Products"}
-            icon={ShoppingBag}
-            value="567"
-            color="#ec4899"
+            name="Estoque baixo"
+            icon={AlertTriangle}
+            value={23}
+            color="#F59E0B"
           />
           <StatCard
-            name={"Conversation Rate"}
-            icon={BarChart2}
-            value="12,6%"
-            color="#10b981"
+            name="Receita Total"
+            icon={DollarSign}
+            value={"$543,210"}
+            color="#EF4444"
           />
         </motion.div>
 
-        <ProductTable/>
-        
+        <ProductTable />
+
         {/* CHARTS */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <SalesTredChart/>
-          <CategoryDistributionChart/>
+          <SalesTredChart />
+          <CategoryDistributionChart />
         </div>
       </main>
     </div>

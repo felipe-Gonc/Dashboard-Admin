@@ -10,48 +10,48 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const SIDEBAR_ITEMS = [
+const sidebarItem = [ 
   {
-    name: "Overview",
+    name: "Visão geral",
     icon: BarChart2,
     color: "#6366f1",
     path: "/",
   },
   {
-    name: "Products",
+    name: "Produtos",
     icon: ShoppingBag,
     color: "#8b5cf6",
     path: "/products",
   },
   {
-    name: "Users",
+    name: "Usuários",
     icon: Users,
     color: "#ec4899",
     path: "/users",
   },
   {
-    name: "Sales",
+    name: "Vendas",
     icon: DollarSign,
     color: "#10b981",
     path: "/sales",
   },
   {
-    name: "Orders",
+    name: "Pedidos",
     icon: ShoppingCart,
     color: "#f59e0b",
     path: "/orders",
   },
   {
-    name: "Analytics",
+    name: "Análises",
     icon: TrendingUp,
     color: "#3b82f6",
     path: "/analytics",
   },
   {
-    name: "Settings",
+    name: "Configurações",
     icon: Settings,
     color: "#10b981",
     path: "/settings",
@@ -77,7 +77,7 @@ const Sidebar = () => {
         </motion.button>
 
         <nav className="mt-8 flex-grow">
-          {SIDEBAR_ITEMS.map((item) => (
+          {sidebarItem.map((item) => (
             <Link key={item.path} to={item.path}>
               <motion.div
               className="flex items-center p-4 text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors mb-2"

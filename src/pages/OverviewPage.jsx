@@ -19,10 +19,10 @@ const OverviewPage = () => {
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1}}
         >
-          <StatCard name={"Total Sales"} icon={Zap} value="12,000" color="#6366f1"/>
-          <StatCard name={"New Users"} icon={User} value="1234" color="#8b5cf6"/>
-          <StatCard name={"Total Products"} icon={ShoppingBag} value="567" color="#ec4899"/>
-          <StatCard name={"Conversation Rate"} icon={BarChart2} value="12,6%" color="#10b981"/>
+          <StatCard name={"Total de vendas"} icon={Zap} value="12,000" color="#6366f1"/>
+          <StatCard name={"Novos Usuários"} icon={User} value="1234" color="#8b5cf6"/>
+          <StatCard name={"Total de produtos"} icon={ShoppingBag} value="567" color="#ec4899"/>
+          <StatCard name={"Taxa de conversão"} icon={BarChart2} value="12,6%" color="#10b981"/>
         </motion.div>
 
         {/* CHARTS */}
